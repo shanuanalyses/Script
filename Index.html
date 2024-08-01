@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohamed Haseeb's Articles</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+
+            background-color: #f4f4f4;
+
+            color: #333;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            text-align: center;
+
+            padding: 2rem;
+
+            background-color: #ffffff;
+
+            border-bottom: 1px solid #ddd;
+
+        }
+
+        header h1 {
+
+            margin: 0;
+
+            font-size: 2rem;
+
+            color: #333;
+
+        }
+
+        header p {
+
+            margin: 0;
+
+            font-size: 1rem;
+
+            color: #666;
+
+        }
+
+        .container {
+
+            max-width: 800px;
+
+            margin: 2rem auto;
+
+            padding: 1rem;
+
+            background-color: #ffffff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .intro {
+
+            margin-bottom: 1.5rem;
+
+            font-size: 1rem;
+
+            color: #666;
+
+        }
+
+        .script-section {
+
+            margin-bottom: 1.5rem;
+
+        }
+
+        .script-section h2 {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 1rem;
+
+            color: #333;
+
+        }
+
+        .dropdown {
+
+            position: relative;
+
+            display: inline-block;
+
+            width: 100%;
+
+        }
+
+        .dropdown-button {
+
+            background-color: #ffffff;
+
+            color: #333;
+
+            border: 1px solid #ddd;
+
+            padding: 12px;
+
+            font-size: 1rem;
+
+            cursor: pointer;
+
+            width: 100%;
+
+            text-align: left;
+
+            border-radius: 4px;
+
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+            transition: background-color 0.3s, border-color 0.3s;
+
+        }
+
+        .dropdown-button:hover {
+
+            background-color: #f0f0f0;
+
+            border-color: #ccc;
+
+        }
+
+        .dropdown-content {
+
+            display: none;
+
+            position: absolute;
+
+            background-color: #ffffff;
+
+            border: 1px solid #ddd;
+
+            width: 100%;
+
+            border-radius: 4px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            z-index: 1;
+
+            margin-top: 8px;
+
+        }
+
+        .dropdown-content a {
+
+            color: #333;
+
+            padding: 12px;
+
+            text-decoration: none;
+
+            display: block;
+
+            font-size: 1rem;
+
+            border-bottom: 1px solid #ddd;
+
+        }
+
+        .dropdown-content a:hover {
+
+            background-color: #f0f0f0;
+
+        }
+
+        .dropdown-content .description {
+
+            font-size: 0.875rem; /* Smaller text size for descriptions */
+
+            color: #666;
+
+            margin-top: 2px;
+
+        }
+
+        .description {
+
+            margin-top: 1.5rem;
+
+            font-size: 1rem;
+
+            color: #666;
+
+        }
+
+        .content {
+
+            display: none;
+
+            margin-top: 1rem;
+
+            padding: 1rem;
+
+            border: 1px solid #ddd;
+
+            border-radius: 4px;
+
+            background-color: #ffffff;
+
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .content h3 {
+
+            margin-top: 0;
+
+            font-size: 1.25rem;
+
+            color: #333;
+
+        }
+
+        .content p {
+
+            font-size: 1rem;
+
+            color: #666;
+
+        }
+
+        .code-area {
+
+            background-color: #000;
+
+            color: #fff;
+
+            border: 1px solid #ddd;
+
+            padding: 12px;
+
+            border-radius: 4px;
+
+            font-family: 'Courier New', Courier, monospace;
+
+            font-size: 0.875rem;
+
+            overflow: auto;
+
+            width: 100%;
+
+            box-sizing: border-box;
+
+            white-space: pre; /* Preserve formatting */
+
+        }
+
+        .show {
+
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Mohamed Haseeb</h1>
+
+        <p>Sr. Performance Marketing Strategist</p>
+
+    </header>
+
+    <div class="container">
+
+        <div class="intro">
+
+            <p>Welcome to my collection of performance marketing scripts. Here, you'll find a range of tools and techniques that can help enhance your marketing strategies and drive results.</p>
+
+        </div>
+
+        <section class="script-section">
+
+            <h2>Scripts</h2>
+
+            <div class="dropdown">
+
+                <button class="dropdown-button">Select a Script</button>
+
+                <div class="dropdown-content">
+
+                    <a href="#" data-content="content1">
+
+                        Script 1
+
+                        <div class="description">Automates ad placement and bidding.</div>
+
+                    </a>
+
+                    <a href="#" data-content="content2">
+
+                        Script 2
+
+                        <div class="description">Analyzes audience engagement.</div>
+
+                    </a>
+
+                    <a href="#" data-content="content3">
+
+                        Script 3
+
+                        <div class="description">Tracks conversion rates and adjusts tactics.</div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="description" id="default-description">
+
+                <p>These scripts are designed to provide actionable insights and automation for your marketing efforts. Feel free to explore and implement them to optimize your campaigns.</p>
+
+            </div>
+
+            <div class="content" id="content1">
+
+                <h3>Script 1</h3>
+
+                <p>This script automates ad placement and bidding to optimize your ad campaigns. Use this tool to streamline your ad management and enhance your bidding strategies.</p>
+
+                <h4>Sample Code:</h4>
+
+                <pre class="code-area">
+
+function automateAdBidding() {
+
+    // Sample code for automating ad bidding
+
+    console.log("Automating ad bidding...");
+
+}
+
+automateAdBidding();
+
+                </pre>
+
+            </div>
+
+            <div class="content" id="content2">
+
+                <h3>Script 2</h3>
+
+                <p>This script analyzes audience engagement metrics to help you understand how your audience interacts with your content. Utilize this analysis to refine your audience targeting and content strategy.</p>
+
+                <h4>Sample Code:</h4>
+
+                <pre class="code-area">
+
+function analyzeEngagement() {
+
+    // Sample code for analyzing audience engagement
+
+    console.log("Analyzing audience engagement...");
+
+}
+
+analyzeEngagement();
+
+                </pre>
+
+            </div>
+
+            <div class="content" id="content3">
+
+                <h3>Script 3</h3>
+
+                <p>This script tracks conversion rates and adjusts tactics based on performance data. Implement this script to dynamically optimize your marketing strategies based on real-time results.</p>
+
+                <h4>Sample Code:</h4>
+
+                <pre class="code-area">
+
+function trackConversions() {
+
+    // Sample code for tracking conversions
+
+    console.log("Tracking conversions...");
+
+}
+
+trackConversions();
+
+                </pre>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+
+        document.querySelector('.dropdown-button').addEventListener('click', function() {
+
+            document.querySelector('.dropdown-content').classList.toggle('show');
+
+        });
+
+
+        document.querySelectorAll('.dropdown-content a').forEach(item => {
+
+            item.addEventListener('click', function() {
+
+                const contentId = this.getAttribute('data-content');
+
+                const contentElements = document.querySelectorAll('.content');
+
+                const defaultDescription = document.getElementById('default-description');
+
+
+                contentElements.forEach(content => {
+
+                    content.style.display = 'none'; // Hide all content
+
+                });
+
+
+                document.getElementById(contentId).style.display = 'block'; // Show selected content
+
+                defaultDescription.style.display = 'none'; // Hide default description
+
+                document.querySelector('.dropdown-content').classList.remove('show');
+
+            });
+
+        });
+
+
+        window.addEventListener('click', function(event) {
+
+            if (!event.target.matches('.dropdown-button')) {
+
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+
+                for (var i = 0; i < dropdowns.length; i++) {
+
+                    var openDropdown = dropdowns[i];
+
+                    if (openDropdown.classList.contains('show')) {
+
+                        openDropdown.classList.remove('show');
+
+                    }
+
+                }
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
